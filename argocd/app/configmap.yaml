@@ -2,7 +2,7 @@ apiVersions: v1
 kind: ConfigMap
 metadata:
   name: nginx-config
-  namespace: nginx
+  namespace: default
 data:
   index.html: |
     <html>
