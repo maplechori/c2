@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: 'https://github.com/maplechori/c2'
     targetRevision: feature/create-kubernetes
-    path: 'argocd/apps/config'
+    path: 'argocd/config'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
