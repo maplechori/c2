@@ -41,6 +41,14 @@ resource "kind_cluster" "c2" {
         host_port      = 443
       }
     }
+
+    node {
+      role = "worker"
+    }
+
+    node {
+      role = "worker"
+    }
   }
 
 }

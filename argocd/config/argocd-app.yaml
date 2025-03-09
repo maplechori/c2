@@ -1,14 +1,13 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-app
-  namespace: argocd
+  name: cnops-app
 spec:
   project: default
   source:
     repoURL: 'https://github.com/maplechori/c2'
     targetRevision: feature/create-kubernetes
-    path: 'argocd/app'
+    path: 'argocd/apps'
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
